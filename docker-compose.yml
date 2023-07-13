@@ -1,7 +1,17 @@
+# version: '3'
+# services:
+#   web:
+#     build: .
+#     container_name: rails_demo
+#     ports:
+#       - "3000:3000"
+
 version: '3'
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: rails_demo
     ports:
       - "3000:3000"
